@@ -1,0 +1,138 @@
+
+.main
+  background-color: $white
+  position: relative
+  
+  &::before
+    position: absolute
+    content: ""
+    width: 0
+    height: 0
+    top: -4.4rem
+    left: 0
+    right: 0
+    margin: 0 auto
+    border-style: solid
+    border-width: 0 4.5rem 4.5rem 4.5rem
+    border-color: transparent transparent $white transparent
+    display: inline-block
+    vertical-align: middle
+  
+  &::after
+    position: absolute
+    font-family: "FontAwesome"
+    content: "\f107"
+    text-align: center
+    width: 4.5rem
+    height: 4.5rem
+    font-size: 4.5rem
+    font-weight: 700
+    top: -3.25rem
+    left: 0
+    right: 0
+    margin: 0 auto
+    color: black
+    animation: arrow 0.4s linear 0s infinite alternate
+  
+.main-container
+  width: 118rem
+  margin: 0 auto
+  padding: 10rem 0 0
+  display: flex
+  align-items: center
+  
+  +max-qhd
+    width: 96rem
+    justify-content: space-around
+  
+  +max-desktop
+    width: auto
+    padding: 5rem 0 0
+    flex-direction: column
+    text-align: center
+  
+  .signup-heading
+    color: $primary-color
+    font-size: 4.8rem
+    line-height: 1
+    padding: 0 0 1rem 0
+    font-weight: 700
+    
+  .signup-info
+    font-size: 3rem
+    line-height: 1
+    font-weight: 300
+    
+  .signup-details
+    color: $tertiary-color
+    padding-top: 5rem
+    font-size: 1.4rem
+    line-height: 1.75
+    max-width: 35rem
+    
+    +max-desktop
+      max-width: 33rem
+      padding: 5rem 1rem 0 1rem
+    
+  .signup-markup
+    margin: 1rem 0 0 1rem
+    font-size: 8rem
+    color: $primary-color
+    position: relative
+    
+    +max-desktop
+      margin: 2rem auto
+      width: 12rem
+      padding: 0 1.5rem 0 0
+    
+    .fa-arrow-up
+      font-size: 3rem
+      width: 0
+      top: 0
+      vertical-align: super
+      
+    .fa-arrow-down
+      font-size: 3rem
+      width: 1.5rem
+      position: absolute
+      bottom: 1rem
+      left: 3.5rem
+      
+      +max-desktop
+        left: 7rem
+      
+    .icon-slash
+      display: inline-block
+      transform: rotate(25deg)
+      font-weight: 300
+      
+  .signup-form
+    width: 80rem
+    margin-left: auto
+    
+    +max-qhd
+      margin: 0
+      width: 39rem
+    
+    +max-mobile
+      width: 31rem
+    
+    .form-input
+      background-color: $secondary-color
+      border: none
+      box-sizing: border-box
+      width: 36rem
+      padding: 1.25rem
+      margin: 0.75rem 1.5rem
+      color: $white
+      font-weight: 300
+      font-size: 1.2rem
+      
+      +max-mobile
+        width: 28rem
+      
+      &::placeholder
+        color: $white
+      
+    
+  

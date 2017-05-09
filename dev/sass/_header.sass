@@ -1,0 +1,48 @@
+.header
+  background: url(../img/top.jpg)
+  background-size: cover
+  background-position: center
+  height: 58rem
+  
+  +max-desktop
+    height: 40rem
+  
+  +max-mobile
+    height: 36rem
+  
+  .header-content
+    background-color: rgba(35,0,87,.5)
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    font-weight: 300
+    text-align: center;
+    
+    .header-slogan
+      color: $white
+      font-size: 6rem
+      line-height: 1.25
+      padding: 0 2.5rem
+      
+      +max-desktop
+        font-size: 4rem
+      
+      +max-mobile
+        font-size: 2.4rem
+    
+    .header-info
+      color: $primary-color
+      font-size: 4.8rem
+      line-height: 1.25
+      
+      +max-desktop
+        font-size: 3.2rem
+      
+      +max-mobile
+        font-size: 2rem
+      
+    .header-actions
+      margin-top: 2.5rem

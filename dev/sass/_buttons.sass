@@ -1,0 +1,49 @@
+.btn
+  color: $black
+  display: inline-block
+  background-color: $primary-color
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 1.2rem
+  font-weight: 700
+  padding: 1rem 3rem
+  box-sizing: border-box
+  cursor: pointer
+  border: 0.2rem solid $primary-color
+  transition: all 0.3s ease-in-out
+  
+  &:hover
+    color: $primary-color
+    background-color: $white
+    
+  
+  &.btn-signup
+    width: 14rem
+    line-height: 3rem
+    text-align: center
+    padding: 1rem 2rem
+    margin: 0 2rem
+    border-radius: 5rem
+    
+    +max-mobile
+      margin: 0.5rem 2.5rem
+    
+    &:hover
+      border-radius: 0
+      color: $black
+      background-color: $white
+    
+  &.btn-rules
+    @extend .btn-signup
+    background-color: transparent;
+    color: $primary-color
+    
+    &:hover
+      background-color: $primary-color
+      color: $black
+    
+  &.btn-submit
+    margin: 0.75rem 1.5rem
+    
+    
+  
