@@ -1,3 +1,3 @@
-# lvbet
+# Landing stadium
 
-Project website: https://kamilsapula.github.io/lvbet/
+Project website: https://kamilsapula.github.io/landing-stadium/
